@@ -192,7 +192,7 @@ resource "azurerm_virtual_machine" "private_vm" {
 
   os_profile_linux_config {
     disable_password_authentication = false
-    custom_data = filebase64("nginx.sh")
+    custom_data = filebase64("user_data.sh")
   }
 
   tags = {
@@ -279,7 +279,7 @@ resource "azurerm_linux_virtual_machine_scale_set" "vmss" {
 
   os_profile_linux_config {
     disable_password_authentication = false
-    custom_data = filebase64("nginx.sh")
+    custom_data = filebase64("user_data.sh")
   }
 
   network_interface {
