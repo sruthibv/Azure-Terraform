@@ -192,6 +192,7 @@ resource "azurerm_virtual_machine" "private_vm" {
 
   os_profile_linux_config {
     disable_password_authentication = false
+    custom_data = filebase64("nginx.sh")
   }
 
   tags = {
@@ -274,6 +275,11 @@ resource "azurerm_linux_virtual_machine_scale_set" "vmss" {
   os_disk {
     storage_account_type = "Standard_LRS"
     caching              = "ReadWrite"
+  }
+
+  os_profile_linux_config {
+    disable_password_authentication = false
+    custom_data = filebase64("nginx.sh")
   }
 
   network_interface {
