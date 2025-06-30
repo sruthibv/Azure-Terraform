@@ -1,6 +1,6 @@
 provider "azurerm" {
   features {}
-  subscription_id = "  " #give our subcription of azure 
+  subscription_id = "0af586a9-cfb7-45ea-b395-c53780f7659d" #give our subcription of azure 
 }
 resource "azurerm_resource_group" "rg" {
   name     = "veera-rg"
@@ -8,7 +8,7 @@ resource "azurerm_resource_group" "rg" {
 }
 
 resource "azurerm_storage_account" "storage" {
-  name                     = "storageveera" # must be globally unique
+  name                     = "storageveeranaruto" # must be globally unique
   resource_group_name      = azurerm_resource_group.rg.name
   location                 = azurerm_resource_group.rg.location
   account_tier             = "Standard"
