@@ -13,7 +13,6 @@ resource "azurerm_storage_account" "storage" {
   location                 = azurerm_resource_group.rg.location
   account_tier             = "Standard"
   account_replication_type = "LRS"
-  allow_blob_public_access = true
 }
 
 resource "azurerm_storage_container" "container" {
@@ -28,6 +27,7 @@ resource "azurerm_storage_blob" "example_blob" {
   storage_container_name = azurerm_storage_container.container.name
   type                   = "Block"
   source                 = "${path.module}/index.html" # make sure this file exists
+  content_type           = "text/html"
 }
 
 output "blob_url" {
