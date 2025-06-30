@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awesome Products - Buy Now!</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            color: #ffffff;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .product {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .product img {
+            max-width: 300px;
+            border-radius: 5px;
+        }
+        .product-details {
+            flex: 1;
+            margin-left: 20px;
+        }
+        .product-details h2 {
+            margin: 0;
+        }
+        .product-details p {
+            margin: 10px 0;
+        }
+        .buy-button {
+            background: #e8491d;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: #35424a;
+            color: #ffffff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Awesome Products</h1>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<div class="container">
+    <section class="product">
+        <img src="https://franchiseindia.s3.ap-south-1.amazonaws.com/uploads/news/wi/5a2b878420b31.jpg" alt="Beauty Product">
+        <div class="product-details">
+            <h2>Beauty Product</h2>
+            <p>Achieve glowing skin with our Radiant Skin Cream. Perfect for all skin types.</p>
+            <p><strong>Price: $29.99</strong></p>
+            <a href="checkout.html?product=beauty" class="buy-button">Buy Now</a>
+        </div>
+    </section>
+
+    <section class="product">
+        <img src="https://www.gorefurbo.com/cdn/shop/collections/Refurbished_Mobile_Phones_1.jpg?v=1695978895" alt="Mobiles">
+        <div class="product-details">
+            <h2>Mobiles</h2>
+            <p>All types of latest mobiles available.</p>
+            <p><strong>Price: $199.99</strong></p>
+            <a href="checkout.html?product=mobiles" class="buy-button">Buy Now</a>
+        </div>
+    </section>
+
+    <section class="product">
+        <img src="https://t3.ftcdn.net/jpg/02/52/38/80/360_F_252388016_KjPnB9vglSCuUJAumCDNbmMzGdzPAucK.jpg" alt="Food Product">
+        <div class="product-details">
+            <h2>Organic Snack Bars</h2>
+            <p>Enjoy a healthy snack with our Organic Snack Bars. Made with natural ingredients.</p>
+            <p><strong>Price: $19.99</strong></p>
+            <a href="checkout.html?product=snacks" class="buy-button">Buy Now</a>
+        </div>
+    </section>
+
+    <section class="product">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiYDATNoFKploew5OMW3etFJIExLq2dOxtNJFVvAiA0rNNB3VLKpAjAwV7SEzg4sIz45Sf_hCc-7MRS4PQM8erBcvLQDel9s2tLmh6s4Lyj7qoHf-rx7oP6F5yhgvPcZHbr09e5sglYptI/w1200-h630-p-k-no-nu/ekiranahome-banner1.jpg" alt="Grocery">
+        <div class="product-details">
+            <h2>Grocery</h2>
+            <p>Experience the best features of our Awesome Product. It's designed to make your life easier and more enjoyable.</p>
+            <p><strong>Price: $99.99</strong></p>
+            <a href="checkout.html?product=grocery" class="buy-button">Buy Now</a>
+        </div>
+    </section>
+</div>
+
+<footer>
+    <p>© 2023 Awesome Products. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
